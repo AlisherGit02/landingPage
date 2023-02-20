@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSite Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="logo">Creative</div>
+      <img src="images/bg.jpg" alt="" class="bg" />
+      <div class="content">
+        <h2>Let's Make<br />Something Creative</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          doloribus est facere eius qui enim quo, accusantium sapiente tempore
+          dicta nihil eligendi fuga illum voluptatem provident distinctio error
+          nam ea?
+        </p>
+        <a href="#">Get Started</a>
+      </div>
+      <p class="copyrightText">©2023. Alisher Abdullaev</p>
+    </section>
+    <div class="menuToggle" onclick="toggleMenu()"></div>
+    <div class="navigation" onclick="toggleMenu()">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="socialBar">
+        <ul>
+          <li>
+            <a href="#"><img src="images/facebook.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/twitter.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/instagram.png" /></a>
+          </li>
+        </ul>
+        <a href="mailto:you@email.com" class="emailBx"
+          ><img src="images/email.png"
+        /></a>
+      </div>
+    </div>
+    <script>
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".menuToggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
